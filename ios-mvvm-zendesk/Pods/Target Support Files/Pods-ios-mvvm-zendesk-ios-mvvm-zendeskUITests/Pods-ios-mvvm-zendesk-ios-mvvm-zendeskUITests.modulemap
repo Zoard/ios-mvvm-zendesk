@@ -1,0 +1,6 @@
+framework module Pods_ios_mvvm_zendesk_ios_mvvm_zendeskUITests {
+  umbrella header "Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

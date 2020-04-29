@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests/Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework
+${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework
+${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework
+${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework

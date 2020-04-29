@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C6600E024591513006DE41C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6600DF24591513006DE41C /* AppDelegate.swift */; };
+		2C6600E424591513006DE41C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6600E324591513006DE41C /* ViewController.swift */; };
+		2C6600E724591513006DE41C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6600E524591513006DE41C /* Main.storyboard */; };
+		2C6600E924591520006DE41C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6600E824591520006DE41C /* Assets.xcassets */; };
+		2C6600EC24591520006DE41C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6600EA24591520006DE41C /* LaunchScreen.storyboard */; };
+		2C6600F724591521006DE41C /* ios_mvvm_zendeskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6600F624591521006DE41C /* ios_mvvm_zendeskTests.swift */; };
+		2C66010224591521006DE41C /* ios_mvvm_zendeskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C66010124591521006DE41C /* ios_mvvm_zendeskUITests.swift */; };
+		B5F703213316683F51930D27 /* Pods_ios_mvvm_zendesk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50251AE17E513F192CFF8DCB /* Pods_ios_mvvm_zendesk.framework */; };
+		CF11E73CF7AC51D6C3167287 /* Pods_ios_mvvm_zendesk_ios_mvvm_zendeskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C857FAD671429EA84AB44 /* Pods_ios_mvvm_zendesk_ios_mvvm_zendeskUITests.framework */; };
+		EE9689EDCFF5ED20C267B199 /* Pods_ios_mvvm_zendeskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325D6D3704154BEBD35BF45A /* Pods_ios_mvvm_zendeskTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C6600F324591521006DE41C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C6600D424591513006DE41C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C6600DB24591513006DE41C;
+			remoteInfo = "ios-mvvm-zendesk";
+		};
+		2C6600FE24591521006DE41C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C6600D424591513006DE41C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C6600DB24591513006DE41C;
+			remoteInfo = "ios-mvvm-zendesk";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11AC6C9FDC491C7C9FAC6AFE /* Pods-ios-mvvm-zendeskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-mvvm-zendeskTests.release.xcconfig"; path = "Target Support Files/Pods-ios-mvvm-zendeskTests/Pods-ios-mvvm-zendeskTests.release.xcconfig"; sourceTree = "<group>"; };
+		2C6600DC24591513006DE41C /* ios-mvvm-zendesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-mvvm-zendesk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C6600DF24591513006DE41C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C6600E324591513006DE41C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C6600E624591513006DE41C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C6600E824591520006DE41C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C6600EB24591520006DE41C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C6600ED24591520006DE41C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C6600F224591521006DE41C /* ios-mvvm-zendeskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-mvvm-zendeskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C6600F624591521006DE41C /* ios_mvvm_zendeskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_mvvm_zendeskTests.swift; sourceTree = "<group>"; };
+		2C6600F824591521006DE41C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C6600FD24591521006DE41C /* ios-mvvm-zendeskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-mvvm-zendeskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C66010124591521006DE41C /* ios_mvvm_zendeskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_mvvm_zendeskUITests.swift; sourceTree = "<group>"; };
+		2C66010324591521006DE41C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		325D6D3704154BEBD35BF45A /* Pods_ios_mvvm_zendeskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_mvvm_zendeskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A2A604AA755C5DB297B494A /* Pods-ios-mvvm-zendeskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-mvvm-zendeskTests.debug.xcconfig"; path = "Target Support Files/Pods-ios-mvvm-zendeskTests/Pods-ios-mvvm-zendeskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		50251AE17E513F192CFF8DCB /* Pods_ios_mvvm_zendesk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_mvvm_zendesk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79899A40302CC534951A6C6E /* Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests.debug.xcconfig"; path = "Target Support Files/Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests/Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A281998ADEBE06788F486CC /* Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests.release.xcconfig"; path = "Target Support Files/Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests/Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AB2DA61599AF9B53D14B2C3E /* Pods-ios-mvvm-zendesk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-mvvm-zendesk.debug.xcconfig"; path = "Target Support Files/Pods-ios-mvvm-zendesk/Pods-ios-mvvm-zendesk.debug.xcconfig"; sourceTree = "<group>"; };
+		F3E4CE99200D421D4AA660E1 /* Pods-ios-mvvm-zendesk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-mvvm-zendesk.release.xcconfig"; path = "Target Support Files/Pods-ios-mvvm-zendesk/Pods-ios-mvvm-zendesk.release.xcconfig"; sourceTree = "<group>"; };
+		F83C857FAD671429EA84AB44 /* Pods_ios_mvvm_zendesk_ios_mvvm_zendeskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_mvvm_zendesk_ios_mvvm_zendeskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C6600D924591513006DE41C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F703213316683F51930D27 /* Pods_ios_mvvm_zendesk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6600EF24591521006DE41C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9689EDCFF5ED20C267B199 /* Pods_ios_mvvm_zendeskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6600FA24591521006DE41C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF11E73CF7AC51D6C3167287 /* Pods_ios_mvvm_zendesk_ios_mvvm_zendeskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C6600D324591513006DE41C = {
+			isa = PBXGroup;
+			children = (
+				2C6600DE24591513006DE41C /* ios-mvvm-zendesk */,
+				2C6600F524591521006DE41C /* ios-mvvm-zendeskTests */,
+				2C66010024591521006DE41C /* ios-mvvm-zendeskUITests */,
+				2C6600DD24591513006DE41C /* Products */,
+				527C7F025B0194C848697D8A /* Pods */,
+				3D1C4E4308896120A4E5B4EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C6600DD24591513006DE41C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C6600DC24591513006DE41C /* ios-mvvm-zendesk.app */,
+				2C6600F224591521006DE41C /* ios-mvvm-zendeskTests.xctest */,
+				2C6600FD24591521006DE41C /* ios-mvvm-zendeskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C6600DE24591513006DE41C /* ios-mvvm-zendesk */ = {
+			isa = PBXGroup;
+			children = (
+				2C6600DF24591513006DE41C /* AppDelegate.swift */,
+				2C6600E324591513006DE41C /* ViewController.swift */,
+				2C6600E524591513006DE41C /* Main.storyboard */,
+				2C6600E824591520006DE41C /* Assets.xcassets */,
+				2C6600EA24591520006DE41C /* LaunchScreen.storyboard */,
+				2C6600ED24591520006DE41C /* Info.plist */,
+			);
+			path = "ios-mvvm-zendesk";
+			sourceTree = "<group>";
+		};
+		2C6600F524591521006DE41C /* ios-mvvm-zendeskTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C6600F624591521006DE41C /* ios_mvvm_zendeskTests.swift */,
+				2C6600F824591521006DE41C /* Info.plist */,
+			);
+			path = "ios-mvvm-zendeskTests";
+			sourceTree = "<group>";
+		};
+		2C66010024591521006DE41C /* ios-mvvm-zendeskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C66010124591521006DE41C /* ios_mvvm_zendeskUITests.swift */,
+				2C66010324591521006DE41C /* Info.plist */,
+			);
+			path = "ios-mvvm-zendeskUITests";
+			sourceTree = "<group>";
+		};
+		3D1C4E4308896120A4E5B4EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50251AE17E513F192CFF8DCB /* Pods_ios_mvvm_zendesk.framework */,
+				F83C857FAD671429EA84AB44 /* Pods_ios_mvvm_zendesk_ios_mvvm_zendeskUITests.framework */,
+				325D6D3704154BEBD35BF45A /* Pods_ios_mvvm_zendeskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		527C7F025B0194C848697D8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB2DA61599AF9B53D14B2C3E /* Pods-ios-mvvm-zendesk.debug.xcconfig */,
+				F3E4CE99200D421D4AA660E1 /* Pods-ios-mvvm-zendesk.release.xcconfig */,
+				79899A40302CC534951A6C6E /* Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests.debug.xcconfig */,
+				9A281998ADEBE06788F486CC /* Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests.release.xcconfig */,
+				4A2A604AA755C5DB297B494A /* Pods-ios-mvvm-zendeskTests.debug.xcconfig */,
+				11AC6C9FDC491C7C9FAC6AFE /* Pods-ios-mvvm-zendeskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C6600DB24591513006DE41C /* ios-mvvm-zendesk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C66010624591521006DE41C /* Build configuration list for PBXNativeTarget "ios-mvvm-zendesk" */;
+			buildPhases = (
+				E8C460BC7C935EA34C17ABC2 /* [CP] Check Pods Manifest.lock */,
+				2C6600D824591513006DE41C /* Sources */,
+				2C6600D924591513006DE41C /* Frameworks */,
+				2C6600DA24591513006DE41C /* Resources */,
+				9CC8900036B35D50FBA9808D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-mvvm-zendesk";
+			productName = "ios-mvvm-zendesk";
+			productReference = 2C6600DC24591513006DE41C /* ios-mvvm-zendesk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C6600F124591521006DE41C /* ios-mvvm-zendeskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C66010924591521006DE41C /* Build configuration list for PBXNativeTarget "ios-mvvm-zendeskTests" */;
+			buildPhases = (
+				E4F18ADB267FFC40AD0882D3 /* [CP] Check Pods Manifest.lock */,
+				2C6600EE24591521006DE41C /* Sources */,
+				2C6600EF24591521006DE41C /* Frameworks */,
+				2C6600F024591521006DE41C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C6600F424591521006DE41C /* PBXTargetDependency */,
+			);
+			name = "ios-mvvm-zendeskTests";
+			productName = "ios-mvvm-zendeskTests";
+			productReference = 2C6600F224591521006DE41C /* ios-mvvm-zendeskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C6600FC24591521006DE41C /* ios-mvvm-zendeskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C66010C24591521006DE41C /* Build configuration list for PBXNativeTarget "ios-mvvm-zendeskUITests" */;
+			buildPhases = (
+				106D442F109102C352B95C7E /* [CP] Check Pods Manifest.lock */,
+				2C6600F924591521006DE41C /* Sources */,
+				2C6600FA24591521006DE41C /* Frameworks */,
+				2C6600FB24591521006DE41C /* Resources */,
+				E63722DE79890555FA45F4C8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C6600FF24591521006DE41C /* PBXTargetDependency */,
+			);
+			name = "ios-mvvm-zendeskUITests";
+			productName = "ios-mvvm-zendeskUITests";
+			productReference = 2C6600FD24591521006DE41C /* ios-mvvm-zendeskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C6600D424591513006DE41C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Zoárd Geöcze";
+				TargetAttributes = {
+					2C6600DB24591513006DE41C = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					2C6600F124591521006DE41C = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 2C6600DB24591513006DE41C;
+					};
+					2C6600FC24591521006DE41C = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 2C6600DB24591513006DE41C;
+					};
+				};
+			};
+			buildConfigurationList = 2C6600D724591513006DE41C /* Build configuration list for PBXProject "ios-mvvm-zendesk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C6600D324591513006DE41C;
+			productRefGroup = 2C6600DD24591513006DE41C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C6600DB24591513006DE41C /* ios-mvvm-zendesk */,
+				2C6600F124591521006DE41C /* ios-mvvm-zendeskTests */,
+				2C6600FC24591521006DE41C /* ios-mvvm-zendeskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C6600DA24591513006DE41C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6600EC24591520006DE41C /* LaunchScreen.storyboard in Resources */,
+				2C6600E924591520006DE41C /* Assets.xcassets in Resources */,
+				2C6600E724591513006DE41C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6600F024591521006DE41C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6600FB24591521006DE41C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		106D442F109102C352B95C7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CC8900036B35D50FBA9808D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-mvvm-zendesk/Pods-ios-mvvm-zendesk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-mvvm-zendesk/Pods-ios-mvvm-zendesk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-mvvm-zendesk/Pods-ios-mvvm-zendesk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4F18ADB267FFC40AD0882D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-mvvm-zendeskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E63722DE79890555FA45F4C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests/Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests/Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests/Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8C460BC7C935EA34C17ABC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-mvvm-zendesk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C6600D824591513006DE41C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6600E424591513006DE41C /* ViewController.swift in Sources */,
+				2C6600E024591513006DE41C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6600EE24591521006DE41C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6600F724591521006DE41C /* ios_mvvm_zendeskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6600F924591521006DE41C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C66010224591521006DE41C /* ios_mvvm_zendeskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C6600F424591521006DE41C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C6600DB24591513006DE41C /* ios-mvvm-zendesk */;
+			targetProxy = 2C6600F324591521006DE41C /* PBXContainerItemProxy */;
+		};
+		2C6600FF24591521006DE41C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C6600DB24591513006DE41C /* ios-mvvm-zendesk */;
+			targetProxy = 2C6600FE24591521006DE41C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C6600E524591513006DE41C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C6600E624591513006DE41C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C6600EA24591520006DE41C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C6600EB24591520006DE41C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C66010424591521006DE41C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C66010524591521006DE41C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C66010724591521006DE41C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB2DA61599AF9B53D14B2C3E /* Pods-ios-mvvm-zendesk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJ9A6KM544;
+				INFOPLIST_FILE = "ios-mvvm-zendesk/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zoardgeocze.ios-mvvm-zendesk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2C66010824591521006DE41C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E4CE99200D421D4AA660E1 /* Pods-ios-mvvm-zendesk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJ9A6KM544;
+				INFOPLIST_FILE = "ios-mvvm-zendesk/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zoardgeocze.ios-mvvm-zendesk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2C66010A24591521006DE41C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A2A604AA755C5DB297B494A /* Pods-ios-mvvm-zendeskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJ9A6KM544;
+				INFOPLIST_FILE = "ios-mvvm-zendeskTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zoardgeocze.ios-mvvm-zendeskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-mvvm-zendesk.app/ios-mvvm-zendesk";
+			};
+			name = Debug;
+		};
+		2C66010B24591521006DE41C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11AC6C9FDC491C7C9FAC6AFE /* Pods-ios-mvvm-zendeskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJ9A6KM544;
+				INFOPLIST_FILE = "ios-mvvm-zendeskTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zoardgeocze.ios-mvvm-zendeskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-mvvm-zendesk.app/ios-mvvm-zendesk";
+			};
+			name = Release;
+		};
+		2C66010D24591521006DE41C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79899A40302CC534951A6C6E /* Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJ9A6KM544;
+				INFOPLIST_FILE = "ios-mvvm-zendeskUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zoardgeocze.ios-mvvm-zendeskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ios-mvvm-zendesk";
+			};
+			name = Debug;
+		};
+		2C66010E24591521006DE41C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A281998ADEBE06788F486CC /* Pods-ios-mvvm-zendesk-ios-mvvm-zendeskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJ9A6KM544;
+				INFOPLIST_FILE = "ios-mvvm-zendeskUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zoardgeocze.ios-mvvm-zendeskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ios-mvvm-zendesk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C6600D724591513006DE41C /* Build configuration list for PBXProject "ios-mvvm-zendesk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C66010424591521006DE41C /* Debug */,
+				2C66010524591521006DE41C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C66010624591521006DE41C /* Build configuration list for PBXNativeTarget "ios-mvvm-zendesk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C66010724591521006DE41C /* Debug */,
+				2C66010824591521006DE41C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C66010924591521006DE41C /* Build configuration list for PBXNativeTarget "ios-mvvm-zendeskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C66010A24591521006DE41C /* Debug */,
+				2C66010B24591521006DE41C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C66010C24591521006DE41C /* Build configuration list for PBXNativeTarget "ios-mvvm-zendeskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C66010D24591521006DE41C /* Debug */,
+				2C66010E24591521006DE41C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C6600D424591513006DE41C /* Project object */;
+}

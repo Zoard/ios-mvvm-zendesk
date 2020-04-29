@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireObjectMapper (5.2.1):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - ObjectMapper (3.5.2)
+  - ReactiveCocoa (10.2.0):
+    - ReactiveSwift (~> 6.2)
+  - ReactiveSwift (6.2.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - AlamofireObjectMapper (~> 5.2.1)
+  - ObjectMapper (~> 3.5)
+  - ReactiveCocoa (~> 10.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireObjectMapper
+    - ObjectMapper
+    - ReactiveCocoa
+    - ReactiveSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
+  ReactiveCocoa: a123c42f449c552460a4ee217dd49c76a17c8204
+  ReactiveSwift: 07ddf579f4eb3ee3bd656214f0461aaf2c0fd639
+
+PODFILE CHECKSUM: a1f7c587464a80cbfb5518e623d65b8b96ae2380
+
+COCOAPODS: 1.9.1
