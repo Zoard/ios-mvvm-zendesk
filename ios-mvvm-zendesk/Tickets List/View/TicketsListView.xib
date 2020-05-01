@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TicketsListViewController" customModule="ios_mvvm_zendesk" customModuleProvider="target">
+            <connections>
+                <outlet property="ticketsListTableView" destination="r7o-Ft-NeM" id="EqH-5r-LFl"/>
+                <outlet property="view" destination="iN0-l3-epB" id="fFr-kz-Sz5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r7o-Ft-NeM">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="r7o-Ft-NeM" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="bvS-Ip-xTu"/>
+                <constraint firstItem="r7o-Ft-NeM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ode-hU-ca8"/>
+                <constraint firstItem="r7o-Ft-NeM" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="rCB-Pt-rFJ"/>
+                <constraint firstItem="r7o-Ft-NeM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="s0c-De-8wy"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="131.25" y="123.59154929577466"/>
+        </view>
+    </objects>
+</document>
