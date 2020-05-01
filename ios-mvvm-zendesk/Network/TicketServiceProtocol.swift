@@ -1,5 +1,5 @@
 //
-//  TicketsListViewModel.swift
+//  TicketApiServiceProtocol.swift
 //  ios-mvvm-zendesk
 //
 //  Created by Zoárd Geöcze on 01/05/20.
@@ -9,8 +9,7 @@
 import Foundation
 import ReactiveSwift
 
-class TicketsListViewModel {
-    
-    
-    
+protocol TicketServiceProtocol {
+    func get() -> SignalProducer<[Ticket],Error>
+//    func post() -> SignalProducer<String,NSError>
 }

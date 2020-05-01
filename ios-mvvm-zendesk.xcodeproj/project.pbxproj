@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2C23D8B7245C970B001C2EEC /* TicketsListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C23D8B6245C970B001C2EEC /* TicketsListTableView.swift */; };
 		2C23D8BA245C9D95001C2EEC /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C23D8B9245C9D95001C2EEC /* Ticket.swift */; };
+		2C23D8BD245CA827001C2EEC /* TicketApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C23D8BC245CA827001C2EEC /* TicketApiRouter.swift */; };
+		2C23D8BF245CB044001C2EEC /* TicketServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C23D8BE245CB044001C2EEC /* TicketServiceProtocol.swift */; };
+		2C23D8C1245CB0E7001C2EEC /* TicketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C23D8C0245CB0E7001C2EEC /* TicketService.swift */; };
 		2C6600E024591513006DE41C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6600DF24591513006DE41C /* AppDelegate.swift */; };
 		2C6600E424591513006DE41C /* TicketsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6600E324591513006DE41C /* TicketsListViewController.swift */; };
 		2C6600E924591520006DE41C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6600E824591520006DE41C /* Assets.xcassets */; };
@@ -45,6 +48,9 @@
 		11AC6C9FDC491C7C9FAC6AFE /* Pods-ios-mvvm-zendeskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-mvvm-zendeskTests.release.xcconfig"; path = "Target Support Files/Pods-ios-mvvm-zendeskTests/Pods-ios-mvvm-zendeskTests.release.xcconfig"; sourceTree = "<group>"; };
 		2C23D8B6245C970B001C2EEC /* TicketsListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsListTableView.swift; sourceTree = "<group>"; };
 		2C23D8B9245C9D95001C2EEC /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		2C23D8BC245CA827001C2EEC /* TicketApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketApiRouter.swift; sourceTree = "<group>"; };
+		2C23D8BE245CB044001C2EEC /* TicketServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketServiceProtocol.swift; sourceTree = "<group>"; };
+		2C23D8C0245CB0E7001C2EEC /* TicketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketService.swift; sourceTree = "<group>"; };
 		2C6600DC24591513006DE41C /* ios-mvvm-zendesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-mvvm-zendesk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6600DF24591513006DE41C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C6600E324591513006DE41C /* TicketsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsListViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +116,9 @@
 		2C23D8BB245CA5FB001C2EEC /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				2C23D8BC245CA827001C2EEC /* TicketApiRouter.swift */,
+				2C23D8BE245CB044001C2EEC /* TicketServiceProtocol.swift */,
+				2C23D8C0245CB0E7001C2EEC /* TicketService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -462,10 +471,13 @@
 			files = (
 				2C6600E424591513006DE41C /* TicketsListViewController.swift in Sources */,
 				2C23D8BA245C9D95001C2EEC /* Ticket.swift in Sources */,
+				2C23D8BF245CB044001C2EEC /* TicketServiceProtocol.swift in Sources */,
 				2C23D8B7245C970B001C2EEC /* TicketsListTableView.swift in Sources */,
 				2C6600E024591513006DE41C /* AppDelegate.swift in Sources */,
 				2C660119245C91C6006DE41C /* TicketsListViewCell.swift in Sources */,
+				2C23D8C1245CB0E7001C2EEC /* TicketService.swift in Sources */,
 				2C660111245C6DC4006DE41C /* TicketsListViewModel.swift in Sources */,
+				2C23D8BD245CA827001C2EEC /* TicketApiRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
