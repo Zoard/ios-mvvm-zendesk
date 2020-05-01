@@ -10,6 +10,7 @@ target 'ios-mvvm-zendesk' do
   pod 'ObjectMapper', '~> 3.5'
   pod 'AlamofireObjectMapper', '~> 5.2.1'
   pod 'ReactiveCocoa', '~> 10.1'
+  pod 'Resolver'
 
   target 'ios-mvvm-zendeskTests' do
     inherit! :search_paths
