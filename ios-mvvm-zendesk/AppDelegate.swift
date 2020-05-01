@@ -20,11 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func setupNavigationBar() {
-        
+//        UINavigationBar.appearance().barTintColor = UIColor.white
+//        UINavigationBar.appearance().tintColor = UIColor(named: "#657986")
+//        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor(named: "#657986")]
     }
     
     private func setupInitialScreen() {
-        window!.rootViewController = ViewController()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let viewModel = TicketsListViewModel()
+        let ticketsListViewController = TicketsListViewController(viewModel: viewModel)
+        window!.rootViewController = ticketsListViewController
         window!.makeKeyAndVisible()
     }
 }

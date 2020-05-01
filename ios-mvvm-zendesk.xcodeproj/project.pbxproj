@@ -3,17 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C23D8B7245C970B001C2EEC /* TicketsListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C23D8B6245C970B001C2EEC /* TicketsListTableView.swift */; };
+		2C23D8BA245C9D95001C2EEC /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C23D8B9245C9D95001C2EEC /* Ticket.swift */; };
 		2C6600E024591513006DE41C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6600DF24591513006DE41C /* AppDelegate.swift */; };
-		2C6600E424591513006DE41C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6600E324591513006DE41C /* ViewController.swift */; };
-		2C6600E724591513006DE41C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6600E524591513006DE41C /* Main.storyboard */; };
+		2C6600E424591513006DE41C /* TicketsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6600E324591513006DE41C /* TicketsListViewController.swift */; };
 		2C6600E924591520006DE41C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6600E824591520006DE41C /* Assets.xcassets */; };
 		2C6600EC24591520006DE41C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6600EA24591520006DE41C /* LaunchScreen.storyboard */; };
 		2C6600F724591521006DE41C /* ios_mvvm_zendeskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6600F624591521006DE41C /* ios_mvvm_zendeskTests.swift */; };
 		2C66010224591521006DE41C /* ios_mvvm_zendeskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C66010124591521006DE41C /* ios_mvvm_zendeskUITests.swift */; };
+		2C660111245C6DC4006DE41C /* TicketsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C660110245C6DC4006DE41C /* TicketsListViewModel.swift */; };
+		2C660115245C6F44006DE41C /* TicketsListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C660114245C6F44006DE41C /* TicketsListView.xib */; };
+		2C660119245C91C6006DE41C /* TicketsListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C660118245C91C6006DE41C /* TicketsListViewCell.swift */; };
+		2C66011B245C932A006DE41C /* TicketsListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C66011A245C932A006DE41C /* TicketsListViewCell.xib */; };
 		B5F703213316683F51930D27 /* Pods_ios_mvvm_zendesk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50251AE17E513F192CFF8DCB /* Pods_ios_mvvm_zendesk.framework */; };
 		CF11E73CF7AC51D6C3167287 /* Pods_ios_mvvm_zendesk_ios_mvvm_zendeskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C857FAD671429EA84AB44 /* Pods_ios_mvvm_zendesk_ios_mvvm_zendeskUITests.framework */; };
 		EE9689EDCFF5ED20C267B199 /* Pods_ios_mvvm_zendeskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325D6D3704154BEBD35BF45A /* Pods_ios_mvvm_zendeskTests.framework */; };
@@ -38,10 +43,11 @@
 
 /* Begin PBXFileReference section */
 		11AC6C9FDC491C7C9FAC6AFE /* Pods-ios-mvvm-zendeskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-mvvm-zendeskTests.release.xcconfig"; path = "Target Support Files/Pods-ios-mvvm-zendeskTests/Pods-ios-mvvm-zendeskTests.release.xcconfig"; sourceTree = "<group>"; };
+		2C23D8B6245C970B001C2EEC /* TicketsListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsListTableView.swift; sourceTree = "<group>"; };
+		2C23D8B9245C9D95001C2EEC /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 		2C6600DC24591513006DE41C /* ios-mvvm-zendesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-mvvm-zendesk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6600DF24591513006DE41C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C6600E324591513006DE41C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2C6600E624591513006DE41C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C6600E324591513006DE41C /* TicketsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsListViewController.swift; sourceTree = "<group>"; };
 		2C6600E824591520006DE41C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C6600EB24591520006DE41C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C6600ED24591520006DE41C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +57,10 @@
 		2C6600FD24591521006DE41C /* ios-mvvm-zendeskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-mvvm-zendeskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C66010124591521006DE41C /* ios_mvvm_zendeskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_mvvm_zendeskUITests.swift; sourceTree = "<group>"; };
 		2C66010324591521006DE41C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C660110245C6DC4006DE41C /* TicketsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsListViewModel.swift; sourceTree = "<group>"; };
+		2C660114245C6F44006DE41C /* TicketsListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketsListView.xib; sourceTree = "<group>"; };
+		2C660118245C91C6006DE41C /* TicketsListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsListViewCell.swift; sourceTree = "<group>"; };
+		2C66011A245C932A006DE41C /* TicketsListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketsListViewCell.xib; sourceTree = "<group>"; };
 		325D6D3704154BEBD35BF45A /* Pods_ios_mvvm_zendeskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_mvvm_zendeskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2A604AA755C5DB297B494A /* Pods-ios-mvvm-zendeskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-mvvm-zendeskTests.debug.xcconfig"; path = "Target Support Files/Pods-ios-mvvm-zendeskTests/Pods-ios-mvvm-zendeskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		50251AE17E513F192CFF8DCB /* Pods_ios_mvvm_zendesk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_mvvm_zendesk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +99,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C23D8B8245C97C2001C2EEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C23D8B9245C9D95001C2EEC /* Ticket.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C23D8BB245CA5FB001C2EEC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		2C6600D324591513006DE41C = {
 			isa = PBXGroup;
 			children = (
@@ -114,9 +139,9 @@
 		2C6600DE24591513006DE41C /* ios-mvvm-zendesk */ = {
 			isa = PBXGroup;
 			children = (
+				2C23D8BB245CA5FB001C2EEC /* Network */,
+				2C66010F245C666B006DE41C /* Tickets List */,
 				2C6600DF24591513006DE41C /* AppDelegate.swift */,
-				2C6600E324591513006DE41C /* ViewController.swift */,
-				2C6600E524591513006DE41C /* Main.storyboard */,
 				2C6600E824591520006DE41C /* Assets.xcassets */,
 				2C6600EA24591520006DE41C /* LaunchScreen.storyboard */,
 				2C6600ED24591520006DE41C /* Info.plist */,
@@ -140,6 +165,36 @@
 				2C66010324591521006DE41C /* Info.plist */,
 			);
 			path = "ios-mvvm-zendeskUITests";
+			sourceTree = "<group>";
+		};
+		2C66010F245C666B006DE41C /* Tickets List */ = {
+			isa = PBXGroup;
+			children = (
+				2C23D8B8245C97C2001C2EEC /* Model */,
+				2C660113245C6F03006DE41C /* ViewModel */,
+				2C660112245C6EF8006DE41C /* View */,
+			);
+			path = "Tickets List";
+			sourceTree = "<group>";
+		};
+		2C660112245C6EF8006DE41C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C6600E324591513006DE41C /* TicketsListViewController.swift */,
+				2C660114245C6F44006DE41C /* TicketsListView.xib */,
+				2C660118245C91C6006DE41C /* TicketsListViewCell.swift */,
+				2C66011A245C932A006DE41C /* TicketsListViewCell.xib */,
+				2C23D8B6245C970B001C2EEC /* TicketsListTableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C660113245C6F03006DE41C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2C660110245C6DC4006DE41C /* TicketsListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		3D1C4E4308896120A4E5B4EF /* Frameworks */ = {
@@ -250,7 +305,7 @@
 				};
 			};
 			buildConfigurationList = 2C6600D724591513006DE41C /* Build configuration list for PBXProject "ios-mvvm-zendesk" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -276,7 +331,8 @@
 			files = (
 				2C6600EC24591520006DE41C /* LaunchScreen.storyboard in Resources */,
 				2C6600E924591520006DE41C /* Assets.xcassets in Resources */,
-				2C6600E724591513006DE41C /* Main.storyboard in Resources */,
+				2C66011B245C932A006DE41C /* TicketsListViewCell.xib in Resources */,
+				2C660115245C6F44006DE41C /* TicketsListView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,8 +460,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C6600E424591513006DE41C /* ViewController.swift in Sources */,
+				2C6600E424591513006DE41C /* TicketsListViewController.swift in Sources */,
+				2C23D8BA245C9D95001C2EEC /* Ticket.swift in Sources */,
+				2C23D8B7245C970B001C2EEC /* TicketsListTableView.swift in Sources */,
 				2C6600E024591513006DE41C /* AppDelegate.swift in Sources */,
+				2C660119245C91C6006DE41C /* TicketsListViewCell.swift in Sources */,
+				2C660111245C6DC4006DE41C /* TicketsListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,14 +501,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2C6600E524591513006DE41C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C6600E624591513006DE41C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2C6600EA24591520006DE41C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
