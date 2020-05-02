@@ -10,10 +10,12 @@ import Foundation
 import Alamofire
 import ObjectMapper
 
+// TOKEN sAkLob3HoVEEUhchWrM9RPiyrnP900AESRpy6c8Y
+
 enum TicketApiRouter: URLRequestConvertible {
     
     case get
-    case post
+    case post(subject: String, comment: String)
     
     var baseURL: URL {
         return URL(string: "https://zoardhbsis.zendesk.com/api/v2/tickets.json")!
@@ -32,14 +34,25 @@ enum TicketApiRouter: URLRequestConvertible {
         switch self {
         case .get:
             return nil
-        case .post:
-            return nil //TODO: CHANGE PARAMETER
+        case .post(let subject, let comment):
+            return ["ticket" : ["subject" : subject, "comment" : comment]]
         }
     }
     
     func asURLRequest() throws -> URLRequest {
         var request = URLRequest(url: baseURL)
         request.httpMethod = method.rawValue
+        
+        let base64Token = "Basic " + "zoard.albuquerque@hbsis.com.br/token:sAkLob3HoVEEUhchWrM9RPiyrnP900AESRpy6c8Y".toBase64()
+        request.addValue(base64Token, forHTTPHeaderField: "Authorization")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        
+        switch self {
+        case .post:
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        case .get:
+            break
+        }
         
         return request
     }

@@ -12,13 +12,13 @@ import UIKit
 extension TicketsListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return viewModel.tickets.value.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TicketsListViewCell", for: indexPath) as! TicketsListViewCell
         
-        cell.ticketTitleLabel.text = "Teste"
+        cell.ticketTitleLabel.text = viewModel.tickets.value[indexPath.row].subject
         
         return cell
     }

@@ -31,7 +31,22 @@ struct TicketService: TicketServiceProtocol {
         }
     }
     
-//    func post() -> SignalProducer<String, NSError> {
-//
-//    }
+    func post(openTicket: OpenTicket) -> SignalProducer<Ticket,Error> {
+        return SignalProducer { observer, disposable in
+            Alamofire
+                .request(TicketApiRouter.post(subject: openTicket.subject, comment: openTicket.comment))
+                .validate()
+                .responseObject { (response: DataResponse<OpenTicketResponse>) in
+                    switch response.result {
+                    case .success:
+                        observer.send(value: response.result.value!.ticket)
+                        observer.sendInterrupted()
+                    case .failure(let error):
+                        observer.send(error: error)
+                    }
+                
+            }
+            
+        }
+    }
 }

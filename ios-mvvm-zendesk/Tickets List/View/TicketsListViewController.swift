@@ -11,7 +11,7 @@ import ReactiveSwift
 
 class TicketsListViewController: UIViewController {
     
-    private let viewModel: TicketsListViewModel
+    let viewModel: TicketsListViewModel
         
     @IBOutlet weak var ticketsListTableView: UITableView!
     
@@ -30,6 +30,12 @@ class TicketsListViewController: UIViewController {
         bindViewModel()
     }
     
+    @IBAction func addNewTicket(_ sender: UIBarButtonItem) {
+//        let nav = UINavigationController(rootViewController: self)
+//        let openNewTicketViewController = OpenNewTicketViewController()
+//        nav.pushViewController(openNewTicketViewController, animated: true)
+    }
+    
     private func setTableView() {
         let nib = UINib(nibName: "TicketsListViewCell", bundle: nil)
         ticketsListTableView.register(nib, forCellReuseIdentifier: "TicketsListViewCell")
@@ -38,7 +44,11 @@ class TicketsListViewController: UIViewController {
     }
     
     private func bindViewModel() {
-//        viewModel.add.producer.observe(on: UIScheduler()).startWithValues(setAddLabel(value:))
+        viewModel.tickets.producer.observe(on: UIScheduler()).startWithValues(reloadTableView(with:))
+    }
+    
+    private func reloadTableView(with tickets:[Ticket]) {
+        ticketsListTableView.reloadData()
     }
     
 }

@@ -14,20 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        setupNavigationBar()
-        setupInitialScreen()
+        setInitialScreen()
         return true
     }
     
-    private func setupNavigationBar() {
-//        UINavigationBar.appearance().barTintColor = UIColor.white
-//        UINavigationBar.appearance().tintColor = UIColor(named: "#657986")
-//        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor(named: "#657986")]
-    }
-    
-    private func setupInitialScreen() {
+    private func setInitialScreen() {
+        window.
         window = UIWindow(frame: UIScreen.main.bounds)
-        let viewModel = TicketsListViewModel()
+        let viewModel = TicketsListViewModel(ticketService: TicketService())
         let ticketsListViewController = TicketsListViewController(viewModel: viewModel)
         window!.rootViewController = ticketsListViewController
         window!.makeKeyAndVisible()

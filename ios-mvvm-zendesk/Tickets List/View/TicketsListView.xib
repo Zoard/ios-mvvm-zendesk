@@ -20,16 +20,31 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r7o-Ft-NeM">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <rect key="frame" x="0.0" y="59" width="320" height="509"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDy-su-aa5">
+                    <rect key="frame" x="0.0" y="15" width="320" height="44"/>
+                    <items>
+                        <navigationItem title="Your Tickets" id="Pey-na-yH4">
+                            <barButtonItem key="rightBarButtonItem" systemItem="add" id="g5I-N7-Ip9">
+                                <connections>
+                                    <action selector="addNewTicket:" destination="-1" id="IYx-3f-PLh"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="r7o-Ft-NeM" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="bvS-Ip-xTu"/>
-                <constraint firstItem="r7o-Ft-NeM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ode-hU-ca8"/>
-                <constraint firstItem="r7o-Ft-NeM" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="rCB-Pt-rFJ"/>
-                <constraint firstItem="r7o-Ft-NeM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="s0c-De-8wy"/>
+                <constraint firstItem="r7o-Ft-NeM" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="0f6-f7-BJb"/>
+                <constraint firstItem="PDy-su-aa5" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="1vo-uW-QEH"/>
+                <constraint firstItem="r7o-Ft-NeM" firstAttribute="top" secondItem="PDy-su-aa5" secondAttribute="bottom" id="4GN-uH-Rnj"/>
+                <constraint firstItem="PDy-su-aa5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="CNS-5U-3o3"/>
+                <constraint firstItem="r7o-Ft-NeM" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Xwy-uL-pIp"/>
+                <constraint firstItem="PDy-su-aa5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gh2-Ts-PLD"/>
+                <constraint firstItem="r7o-Ft-NeM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="jtH-8k-ZAK"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="131.25" y="123.59154929577466"/>

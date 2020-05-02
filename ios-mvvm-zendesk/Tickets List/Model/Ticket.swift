@@ -34,6 +34,17 @@ class Ticket: Mappable {
     var status: String
     var requesterId: CLong
     
+    init() {
+        self.id = 0
+        self.createdAt = ""
+        self.type = ""
+        self.subject = ""
+        self.description = ""
+        self.priority = ""
+        self.status = ""
+        self.requesterId = 0
+    }
+    
     required init?(map: Map) {
         self.id = 0
         self.createdAt = ""

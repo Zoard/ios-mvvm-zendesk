@@ -11,5 +11,5 @@ import ReactiveSwift
 
 protocol TicketServiceProtocol {
     func get() -> SignalProducer<[Ticket],Error>
-//    func post() -> SignalProducer<String,NSError>
+    func post(openTicket: OpenTicket) -> SignalProducer<Ticket,Error>
 }
