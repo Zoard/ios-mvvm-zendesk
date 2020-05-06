@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C153F922462419E0015462F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C153F912462419E0015462F /* BaseViewController.swift */; };
+		2C153F94246244490015462F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C153F93246244490015462F /* Constants.swift */; };
 		2C23D8B7245C970B001C2EEC /* TicketsListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C23D8B6245C970B001C2EEC /* TicketsListTableView.swift */; };
 		2C23D8BA245C9D95001C2EEC /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C23D8B9245C9D95001C2EEC /* Ticket.swift */; };
 		2C23D8BD245CA827001C2EEC /* TicketApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C23D8BC245CA827001C2EEC /* TicketApiRouter.swift */; };
@@ -16,7 +18,7 @@
 		2C23D8C7245CD4EA001C2EEC /* OpenNewTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C23D8C6245CD4E9001C2EEC /* OpenNewTicketViewController.swift */; };
 		2C23D8CA245CD60E001C2EEC /* OpenNewTicketView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C23D8C9245CD60E001C2EEC /* OpenNewTicketView.xib */; };
 		2C23D8CE245CFB03001C2EEC /* OpenTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C23D8CD245CFB03001C2EEC /* OpenTicket.swift */; };
-		2C23D8D0245D0AB5001C2EEC /* OpenTicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C23D8CF245D0AB5001C2EEC /* OpenTicketViewModel.swift */; };
+		2C23D8D0245D0AB5001C2EEC /* OpenNewTicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C23D8CF245D0AB5001C2EEC /* OpenNewTicketViewModel.swift */; };
 		2C6600E024591513006DE41C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6600DF24591513006DE41C /* AppDelegate.swift */; };
 		2C6600E424591513006DE41C /* TicketsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6600E324591513006DE41C /* TicketsListViewController.swift */; };
 		2C6600E924591520006DE41C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6600E824591520006DE41C /* Assets.xcassets */; };
@@ -51,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		11AC6C9FDC491C7C9FAC6AFE /* Pods-ios-mvvm-zendeskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-mvvm-zendeskTests.release.xcconfig"; path = "Target Support Files/Pods-ios-mvvm-zendeskTests/Pods-ios-mvvm-zendeskTests.release.xcconfig"; sourceTree = "<group>"; };
+		2C153F912462419E0015462F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2C153F93246244490015462F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2C23D8B6245C970B001C2EEC /* TicketsListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsListTableView.swift; sourceTree = "<group>"; };
 		2C23D8B9245C9D95001C2EEC /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 		2C23D8BC245CA827001C2EEC /* TicketApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketApiRouter.swift; sourceTree = "<group>"; };
@@ -60,7 +64,7 @@
 		2C23D8C6245CD4E9001C2EEC /* OpenNewTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenNewTicketViewController.swift; sourceTree = "<group>"; };
 		2C23D8C9245CD60E001C2EEC /* OpenNewTicketView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenNewTicketView.xib; sourceTree = "<group>"; };
 		2C23D8CD245CFB03001C2EEC /* OpenTicket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTicket.swift; sourceTree = "<group>"; };
-		2C23D8CF245D0AB5001C2EEC /* OpenTicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTicketViewModel.swift; sourceTree = "<group>"; };
+		2C23D8CF245D0AB5001C2EEC /* OpenNewTicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenNewTicketViewModel.swift; sourceTree = "<group>"; };
 		2C6600DC24591513006DE41C /* ios-mvvm-zendesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-mvvm-zendesk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6600DF24591513006DE41C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C6600E324591513006DE41C /* TicketsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsListViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +119,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C153F90246241860015462F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2C153F912462419E0015462F /* BaseViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		2C23D8B8245C97C2001C2EEC /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				2C23D8C3245CC896001C2EEC /* Extensions.swift */,
+				2C153F93246244490015462F /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -163,7 +176,7 @@
 		2C23D8CB245CFAB9001C2EEC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				2C23D8CF245D0AB5001C2EEC /* OpenTicketViewModel.swift */,
+				2C23D8CF245D0AB5001C2EEC /* OpenNewTicketViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -201,6 +214,7 @@
 		2C6600DE24591513006DE41C /* ios-mvvm-zendesk */ = {
 			isa = PBXGroup;
 			children = (
+				2C153F90246241860015462F /* Core */,
 				2C23D8C5245CD125001C2EEC /* Open New Ticket */,
 				2C23D8C2245CC87A001C2EEC /* Utils */,
 				2C23D8BB245CA5FB001C2EEC /* Network */,
@@ -530,7 +544,9 @@
 				2C23D8BA245C9D95001C2EEC /* Ticket.swift in Sources */,
 				2C23D8BF245CB044001C2EEC /* TicketServiceProtocol.swift in Sources */,
 				2C23D8B7245C970B001C2EEC /* TicketsListTableView.swift in Sources */,
-				2C23D8D0245D0AB5001C2EEC /* OpenTicketViewModel.swift in Sources */,
+				2C153F94246244490015462F /* Constants.swift in Sources */,
+				2C153F922462419E0015462F /* BaseViewController.swift in Sources */,
+				2C23D8D0245D0AB5001C2EEC /* OpenNewTicketViewModel.swift in Sources */,
 				2C23D8C7245CD4EA001C2EEC /* OpenNewTicketViewController.swift in Sources */,
 				2C6600E024591513006DE41C /* AppDelegate.swift in Sources */,
 				2C23D8C4245CC896001C2EEC /* Extensions.swift in Sources */,

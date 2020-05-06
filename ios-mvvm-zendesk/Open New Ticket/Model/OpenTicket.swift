@@ -13,6 +13,10 @@ class OpenTicketResponse: Mappable {
     
     var ticket: Ticket
     
+    init() {
+        self.ticket = Ticket()
+    }
+    
     required init?(map: Map) {
         self.ticket = Ticket()
     }
@@ -26,6 +30,16 @@ class OpenTicket: Mappable {
     
     var subject: String
     var comment: String
+    
+    init() {
+        self.subject = ""
+        self.comment = ""
+    }
+    
+    init(_ subject: String, _ comment: String) {
+        self.subject = subject
+        self.comment = comment
+    }
     
     required init?(map: Map) {
         subject = ""

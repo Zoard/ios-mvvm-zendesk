@@ -9,14 +9,16 @@
 import Foundation
 import UIKit
 
-class OpenNewTicketViewController: UIViewController {
-    
+class OpenNewTicketViewController: BaseViewController {
     
     @IBOutlet weak var ticketSubjectLabel: UITextField!
     @IBOutlet weak var ticketCommentLabel: UITextField!
     
-    init() {
-        super.init(nibName: "OpenNewTicketViewController", bundle: nil)
+    let viewModel: OpenNewTicketViewModel
+    
+    init(viewModel: OpenNewTicketViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: "OpenNewTicketView", bundle: nil)
     }
     
     required init?(coder: NSCoder) {
@@ -31,6 +33,29 @@ class OpenNewTicketViewController: UIViewController {
     func bindViewModel() {
         
     }
+    
+    @IBAction func openNewTicket(_ sender: UIButton) {
+        guard let subject = ticketSubjectLabel.text, !subject.isEmpty else {
+            showAlert(
+                title: Constants.obrigatoryField.rawValue,
+                message: Constants.obrigatorySubjectField.rawValue,
+                styleType: .cancel
+            )
+            return
+        }
+                
+        guard let comment = ticketCommentLabel.text, !comment.isEmpty else {
+            showAlert(
+                title: Constants.obrigatoryField.rawValue,
+                message: Constants.obrigatoryCommentField.rawValue,
+                styleType: .cancel
+            )
+            return
+        }
+        
+        viewModel.openNewTicket(subject: subject, comment: comment)
+    }
+    
     
     @IBAction func backToTicketsList(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)

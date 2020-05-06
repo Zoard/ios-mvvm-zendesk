@@ -9,7 +9,7 @@
 import UIKit
 import ReactiveSwift
 
-class TicketsListViewController: UIViewController {
+class TicketsListViewController: BaseViewController {
     
     let viewModel: TicketsListViewModel
         

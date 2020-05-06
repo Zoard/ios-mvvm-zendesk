@@ -47,6 +47,11 @@ enum TicketApiRouter: URLRequestConvertible {
         request.addValue(base64Token, forHTTPHeaderField: "Authorization")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         
+        if let parameters = parameters {
+            let jsonData = try? JSONSerialization.data(withJSONObject: parameters)
+            request.httpBody = jsonData
+        }
+        
         switch self {
         case .post:
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")

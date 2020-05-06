@@ -11,7 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OpenNewTicketViewController" customModule="ios_mvvm_zendesk" customModuleProvider="target">
             <connections>
                 <outlet property="ticketCommentLabel" destination="iKz-cr-VPD" id="xwQ-l9-FTc"/>
-                <outlet property="ticketTitleLabel" destination="seJ-na-9tI" id="d6T-Z8-jLz"/>
+                <outlet property="ticketSubjectLabel" destination="seJ-na-9tI" id="Zpp-Lb-U8i"/>
                 <outlet property="view" destination="iN0-l3-epB" id="jx4-4K-wgg"/>
             </connections>
         </placeholder>
@@ -56,6 +56,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                     <state key="normal" title="Open"/>
+                    <connections>
+                        <action selector="openNewTicket:" destination="-1" eventType="touchUpInside" id="hlc-eU-AtP"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

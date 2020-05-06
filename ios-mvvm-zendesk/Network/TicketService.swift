@@ -31,7 +31,7 @@ struct TicketService: TicketServiceProtocol {
         }
     }
     
-    func post(openTicket: OpenTicket) -> SignalProducer<Ticket,Error> {
+    func post(openTicket: OpenTicket) -> SignalProducer<OpenTicketResponse,Error> {
         return SignalProducer { observer, disposable in
             Alamofire
                 .request(TicketApiRouter.post(subject: openTicket.subject, comment: openTicket.comment))
@@ -39,7 +39,7 @@ struct TicketService: TicketServiceProtocol {
                 .responseObject { (response: DataResponse<OpenTicketResponse>) in
                     switch response.result {
                     case .success:
-                        observer.send(value: response.result.value!.ticket)
+                        observer.send(value: response.result.value!)
                         observer.sendInterrupted()
                     case .failure(let error):
                         observer.send(error: error)
