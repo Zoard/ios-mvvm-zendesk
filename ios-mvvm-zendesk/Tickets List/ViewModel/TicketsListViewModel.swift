@@ -19,10 +19,9 @@ class TicketsListViewModel {
     
     init(ticketService: TicketServiceProtocol) {
         self.ticketService = ticketService
-        loadTickets()
     }
     
-    private func loadTickets() {
+    func loadTickets() {
         self.ticketService.get()
         .on(starting: {self.loading.value = true})
         .flatMap(.latest, { (tickets) -> SignalProducer<[Ticket],Error> in

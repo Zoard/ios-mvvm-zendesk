@@ -27,18 +27,23 @@ class OpenNewTicketViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar()
         bindViewModel()
     }
     
-    func bindViewModel() {
+    private func setNavigationBar() {
+        self.navigationItem.title = "Open A New Ticket"
+    }
+    
+    private func bindViewModel() {
         
     }
     
     @IBAction func openNewTicket(_ sender: UIButton) {
         guard let subject = ticketSubjectLabel.text, !subject.isEmpty else {
             showAlert(
-                title: Constants.obrigatoryField.rawValue,
-                message: Constants.obrigatorySubjectField.rawValue,
+                title: AlertMessages.obrigatoryField.rawValue,
+                message: AlertMessages.obrigatorySubjectField.rawValue,
                 styleType: .cancel
             )
             return
@@ -46,8 +51,8 @@ class OpenNewTicketViewController: BaseViewController {
                 
         guard let comment = ticketCommentLabel.text, !comment.isEmpty else {
             showAlert(
-                title: Constants.obrigatoryField.rawValue,
-                message: Constants.obrigatoryCommentField.rawValue,
+                title: AlertMessages.obrigatoryField.rawValue,
+                message: AlertMessages.obrigatoryCommentField.rawValue,
                 styleType: .cancel
             )
             return

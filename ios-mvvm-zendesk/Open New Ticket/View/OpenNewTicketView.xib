@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ticket Subject" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="seJ-na-9tI">
-                    <rect key="frame" x="16" y="91" width="343" height="40"/>
+                    <rect key="frame" x="16" y="16" width="343" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="B8C-nL-XsQ"/>
                         <constraint firstAttribute="height" constant="40" id="xOz-GB-T3u"/>
@@ -29,20 +29,8 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Frj-Nr-lcB">
-                    <rect key="frame" x="0.0" y="15" width="375" height="44"/>
-                    <items>
-                        <navigationItem title="Open New Ticket" id="3IR-bl-p1l">
-                            <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="nnh-7V-mv1">
-                                <connections>
-                                    <action selector="backToTicketsList:" destination="-1" id="D8y-TC-2x3"/>
-                                </connections>
-                            </barButtonItem>
-                        </navigationItem>
-                    </items>
-                </navigationBar>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ticket Comment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iKz-cr-VPD">
-                    <rect key="frame" x="16" y="141" width="343" height="40"/>
+                    <rect key="frame" x="16" y="66" width="343" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="1t1-52-ZCR"/>
                     </constraints>
@@ -50,7 +38,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ett-12-yYj">
-                    <rect key="frame" x="162" y="219" width="51" height="40"/>
+                    <rect key="frame" x="162" y="144" width="51" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="FRm-Zi-EI3"/>
                     </constraints>
@@ -63,12 +51,9 @@
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="Frj-Nr-lcB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="07U-je-tP5"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="seJ-na-9tI" secondAttribute="trailing" constant="16" id="4CH-TP-WUW"/>
                 <constraint firstItem="seJ-na-9tI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="8NN-Wo-0QA"/>
-                <constraint firstItem="Frj-Nr-lcB" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="9ar-zP-324"/>
-                <constraint firstItem="Frj-Nr-lcB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="AcM-pL-DeM"/>
-                <constraint firstItem="seJ-na-9tI" firstAttribute="top" secondItem="Frj-Nr-lcB" secondAttribute="bottom" constant="32" id="EVj-UE-YdH"/>
+                <constraint firstItem="seJ-na-9tI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="9p2-1b-I7p"/>
                 <constraint firstItem="iKz-cr-VPD" firstAttribute="top" secondItem="seJ-na-9tI" secondAttribute="bottom" constant="10" id="Ifz-lr-aeP"/>
                 <constraint firstItem="ett-12-yYj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="162" id="Moh-LA-2vv"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iKz-cr-VPD" secondAttribute="trailing" constant="16" id="ZAB-lY-jCm"/>

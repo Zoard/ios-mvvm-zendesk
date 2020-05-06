@@ -21,12 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func setInitialScreen() {
 //        window.
         window = UIWindow(frame: UIScreen.main.bounds)
-//        let viewModel = TicketsListViewModel(ticketService: TicketService())
-//        let ticketsListViewController = TicketsListViewController(viewModel: viewModel)
-//        window!.rootViewController = ticketsListViewController
-        let viewModel = OpenNewTicketViewModel(ticketService: TicketService())
-        let openNewTicketViewController = OpenNewTicketViewController(viewModel: viewModel)
-        window!.rootViewController = openNewTicketViewController
+        let viewModel = TicketsListViewModel(ticketService: TicketService())
+        let ticketsListViewController = TicketsListViewController(viewModel: viewModel)
+        window!.rootViewController = UINavigationController(rootViewController: ticketsListViewController)
+//        let viewModel = OpenNewTicketViewModel(ticketService: TicketService())
+//        let openNewTicketViewController = OpenNewTicketViewController(viewModel: viewModel)
+//        window!.rootViewController = openNewTicketViewController
         window!.makeKeyAndVisible()
     }
 }

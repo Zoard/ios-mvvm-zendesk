@@ -26,14 +26,24 @@ class TicketsListViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar()
         setTableView()
         bindViewModel()
     }
     
-    @IBAction func addNewTicket(_ sender: UIBarButtonItem) {
-//        let nav = UINavigationController(rootViewController: self)
-//        let openNewTicketViewController = OpenNewTicketViewController()
-//        nav.pushViewController(openNewTicketViewController, animated: true)
+    override func viewDidAppear(_ animated: Bool) {
+        viewModel.loadTickets()
+    }
+    
+    private func setNavigationBar() {
+        self.navigationItem.title = "Your Tickets"
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(self.addNewTicket(_:)))
+    }
+    
+    @objc private func addNewTicket(_ sender: UIBarButtonItem) {
+        let openNewTicketViewController = OpenNewTicketViewController(
+            viewModel: OpenNewTicketViewModel(ticketService: TicketService()))
+        self.navigationController?.pushViewController(openNewTicketViewController, animated: true)
     }
     
     private func setTableView() {

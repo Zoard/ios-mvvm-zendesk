@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Constants: String {
+enum AlertMessages: String {
     case obrigatoryField = "This field is obrigatory"
     case obrigatorySubjectField = "You must provide a subject to open a new ticket."
     case obrigatoryCommentField = "You must provide a comment to open a new ticket"
