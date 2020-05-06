@@ -27,7 +27,7 @@ class TicketsListViewModel {
         .flatMap(.latest, { (tickets) -> SignalProducer<TicketsResponse,Error> in
             return SignalProducer<TicketsResponse,Error>(value: tickets)
         })
-        .on(completed: {self.loading.value = false})
+        .on(terminated: { self.loading.value = false})
         .observe(on: UIScheduler())
         .startWithResult({ (result) in
             if let tickets = result.value {

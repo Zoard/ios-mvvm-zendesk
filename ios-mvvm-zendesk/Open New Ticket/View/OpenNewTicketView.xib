@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OpenNewTicketViewController" customModule="ios_mvvm_zendesk" customModuleProvider="target">
             <connections>
+                <outlet property="loadingIndicatorView" destination="tBo-Cj-crC" id="bHz-Jc-dFC"/>
                 <outlet property="ticketCommentLabel" destination="iKz-cr-VPD" id="xwQ-l9-FTc"/>
                 <outlet property="ticketSubjectLabel" destination="seJ-na-9tI" id="Zpp-Lb-U8i"/>
                 <outlet property="view" destination="iN0-l3-epB" id="jx4-4K-wgg"/>
@@ -48,6 +49,9 @@
                         <action selector="openNewTicket:" destination="-1" eventType="touchUpInside" id="hlc-eU-AtP"/>
                     </connections>
                 </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="tBo-Cj-crC">
+                    <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
@@ -56,7 +60,9 @@
                 <constraint firstItem="seJ-na-9tI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="9p2-1b-I7p"/>
                 <constraint firstItem="iKz-cr-VPD" firstAttribute="top" secondItem="seJ-na-9tI" secondAttribute="bottom" constant="10" id="Ifz-lr-aeP"/>
                 <constraint firstItem="ett-12-yYj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="162" id="Moh-LA-2vv"/>
+                <constraint firstItem="tBo-Cj-crC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XVp-74-z29"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iKz-cr-VPD" secondAttribute="trailing" constant="16" id="ZAB-lY-jCm"/>
+                <constraint firstItem="tBo-Cj-crC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="cTH-db-Tl8"/>
                 <constraint firstItem="iKz-cr-VPD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="dl9-iZ-3hp"/>
                 <constraint firstItem="ett-12-yYj" firstAttribute="top" secondItem="iKz-cr-VPD" secondAttribute="bottom" constant="38" id="lkD-cW-Rya"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ett-12-yYj" secondAttribute="trailing" constant="162" id="pif-4j-1Ga"/>

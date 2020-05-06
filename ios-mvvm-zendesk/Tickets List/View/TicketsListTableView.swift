@@ -16,7 +16,7 @@ extension TicketsListViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TicketsListViewCell", for: indexPath) as! TicketsListViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: TicketsListConstants.viewCellNibName, for: indexPath) as! TicketsListViewCell
         
         cell.ticketTitleLabel.text = viewModel.tickets.value[indexPath.row].subject
         

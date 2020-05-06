@@ -17,7 +17,7 @@ class OpenNewTicketViewModel {
     let openTicket = MutableProperty<OpenTicketResponse>(OpenTicketResponse())
     let loading = MutableProperty<Bool>(false)
     
-    let responseMessage = Signal<Ticket,Error>.pipe()
+    let openNewTicketResult = Signal<Ticket,Error>.pipe()
     
     init(ticketService: TicketServiceProtocol) {
         self.ticketService = ticketService
@@ -30,18 +30,17 @@ class OpenNewTicketViewModel {
             .flatMap(.latest, { (openTicketResponse) -> SignalProducer<OpenTicketResponse,Error> in
                 return SignalProducer<OpenTicketResponse,Error>(value: openTicketResponse)
             })
-            .on(completed: { self.loading.value = false })
+            .on(terminated: { self.loading.value = false })
             .observe(on: UIScheduler())
             .startWithResult({ (result) in
                 if let openTicketResponse = result.value {
                     self.openTicket.value = openTicketResponse
-                    self.responseMessage.input.send(value: openTicketResponse.ticket)
+                    self.openNewTicketResult.input.send(value: openTicketResponse.ticket)
                 } else {
-                    self.responseMessage.input.send(error: result.error!)
+                    self.openNewTicketResult.input.send(error: result.error!)
                     print(result.error!.localizedDescription)
                 }
             })
-        
     }
     
 }

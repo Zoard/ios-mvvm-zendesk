@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TicketsListViewController" customModule="ios_mvvm_zendesk" customModuleProvider="target">
             <connections>
+                <outlet property="loadingIndicatorView" destination="aML-Hz-dBO" id="gcK-OK-YCF"/>
                 <outlet property="ticketsListTableView" destination="r7o-Ft-NeM" id="EqH-5r-LFl"/>
                 <outlet property="view" destination="iN0-l3-epB" id="fFr-kz-Sz5"/>
             </connections>
@@ -23,14 +24,19 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="aML-Hz-dBO">
+                    <rect key="frame" x="150" y="274" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="r7o-Ft-NeM" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="0f6-f7-BJb"/>
                 <constraint firstItem="r7o-Ft-NeM" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="4Ma-tp-3ao"/>
+                <constraint firstItem="aML-Hz-dBO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7bK-Gt-S08"/>
                 <constraint firstItem="r7o-Ft-NeM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="EnL-VR-1Sf"/>
                 <constraint firstItem="r7o-Ft-NeM" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Xwy-uL-pIp"/>
                 <constraint firstItem="r7o-Ft-NeM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eSJ-Sm-fC3"/>
+                <constraint firstItem="aML-Hz-dBO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gKl-BH-32w"/>
                 <constraint firstItem="r7o-Ft-NeM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="jtH-8k-ZAK"/>
                 <constraint firstItem="r7o-Ft-NeM" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="z0H-rn-H5d"/>
             </constraints>

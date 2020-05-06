@@ -14,10 +14,11 @@ class TicketsListViewController: BaseViewController {
     let viewModel: TicketsListViewModel
         
     @IBOutlet weak var ticketsListTableView: UITableView!
+    @IBOutlet weak var loadingIndicatorView: UIActivityIndicatorView!
     
     init(viewModel: TicketsListViewModel) {
         self.viewModel = viewModel
-        super.init(nibName: "TicketsListView", bundle: nil)
+        super.init(nibName: TicketsListConstants.nibName, bundle: nil)
     }
     
     required init?(coder: NSCoder) {
@@ -36,7 +37,7 @@ class TicketsListViewController: BaseViewController {
     }
     
     private func setNavigationBar() {
-        self.navigationItem.title = "Your Tickets"
+        self.navigationItem.title = TicketsListConstants.navBarTitle
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(self.addNewTicket(_:)))
     }
     
@@ -47,18 +48,31 @@ class TicketsListViewController: BaseViewController {
     }
     
     private func setTableView() {
-        let nib = UINib(nibName: "TicketsListViewCell", bundle: nil)
-        ticketsListTableView.register(nib, forCellReuseIdentifier: "TicketsListViewCell")
+        let nib = UINib(nibName: TicketsListConstants.viewCellNibName, bundle: nil)
+        ticketsListTableView.register(nib, forCellReuseIdentifier: TicketsListConstants.viewCellNibName)
         ticketsListTableView.delegate = self
         ticketsListTableView.dataSource = self
     }
     
     private func bindViewModel() {
-        viewModel.tickets.producer.observe(on: UIScheduler()).startWithValues(reloadTableView(with:))
+        viewModel.tickets.producer.observe(on: UIScheduler()).startWithValues(reloadTableView)
+        viewModel.loading.producer.observe(on: UIScheduler()).startWithValues(loadingTableView)
     }
     
-    private func reloadTableView(with tickets:[Ticket]) {
+    private func reloadTableView(_ tickets:[Ticket]) {
         ticketsListTableView.reloadData()
+    }
+    
+    private func loadingTableView(_ loading: Bool) {
+        if loading {
+            ticketsListTableView.isHidden = true
+            loadingIndicatorView.isHidden = false
+            loadingIndicatorView.startAnimating()
+        } else {
+            loadingIndicatorView.stopAnimating()
+            loadingIndicatorView.isHidden = true
+            ticketsListTableView.isHidden = false
+        }
     }
     
 }
