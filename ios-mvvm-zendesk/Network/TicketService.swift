@@ -14,15 +14,15 @@ import AlamofireObjectMapper
 
 struct TicketService: TicketServiceProtocol {
     
-    func get() -> SignalProducer<[Ticket],Error> {
+    func get() -> SignalProducer<TicketsResponse,Error> {
         return SignalProducer { observer, disposable in
             Alamofire
                 .request(TicketApiRouter.get)
                 .validate()
-                .responseObject { (response: DataResponse<TicketResponse>) in
+                .responseObject { (response: DataResponse<TicketsResponse>) in
                     switch response.result {
                     case .success:
-                        observer.send(value: response.result.value!.tickets)
+                        observer.send(value: response.result.value!)
                         observer.sendInterrupted()
                     case .failure(let error):
                         observer.send(error: error)

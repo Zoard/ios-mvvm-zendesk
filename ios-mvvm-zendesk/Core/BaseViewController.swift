@@ -11,11 +11,12 @@ import UIKit
 
 class BaseViewController: UIViewController {
     
-    func showAlert(title: String, message: String, styleType: UIAlertAction.Style) {
+    func showAlert(title: String, message: String, styleType: UIAlertAction.Style,
+                   _ action: ((UIAlertAction) -> Void)? = nil) {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: "OK", style: styleType, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: styleType, handler: action))
         self.present(alert, animated: true, completion: nil)
         
     }

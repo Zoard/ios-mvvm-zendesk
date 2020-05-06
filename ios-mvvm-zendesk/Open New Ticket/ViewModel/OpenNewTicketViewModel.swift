@@ -17,6 +17,8 @@ class OpenNewTicketViewModel {
     let openTicket = MutableProperty<OpenTicketResponse>(OpenTicketResponse())
     let loading = MutableProperty<Bool>(false)
     
+    let responseMessage = Signal<Ticket,Error>.pipe()
+    
     init(ticketService: TicketServiceProtocol) {
         self.ticketService = ticketService
     }
@@ -33,7 +35,9 @@ class OpenNewTicketViewModel {
             .startWithResult({ (result) in
                 if let openTicketResponse = result.value {
                     self.openTicket.value = openTicketResponse
+                    self.responseMessage.input.send(value: openTicketResponse.ticket)
                 } else {
+                    self.responseMessage.input.send(error: result.error!)
                     print(result.error!.localizedDescription)
                 }
             })

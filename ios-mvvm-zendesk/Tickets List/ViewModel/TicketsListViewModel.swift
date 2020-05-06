@@ -24,18 +24,17 @@ class TicketsListViewModel {
     func loadTickets() {
         self.ticketService.get()
         .on(starting: {self.loading.value = true})
-        .flatMap(.latest, { (tickets) -> SignalProducer<[Ticket],Error> in
-            return SignalProducer<[Ticket],Error>(value: tickets)
+        .flatMap(.latest, { (tickets) -> SignalProducer<TicketsResponse,Error> in
+            return SignalProducer<TicketsResponse,Error>(value: tickets)
         })
         .on(completed: {self.loading.value = false})
         .observe(on: UIScheduler())
         .startWithResult({ (result) in
             if let tickets = result.value {
-                self.tickets.value = tickets
-                print(tickets[0].subject)
+                self.tickets.value = tickets.tickets
             } else {
                 print("Error")
-                print(result.error.debugDescription)
+                print(result.error!.localizedDescription)
             }
         })
     }

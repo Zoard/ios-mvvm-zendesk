@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import ReactiveSwift
 
 class OpenNewTicketViewController: BaseViewController {
     
@@ -36,14 +37,32 @@ class OpenNewTicketViewController: BaseViewController {
     }
     
     private func bindViewModel() {
-        
+        viewModel.responseMessage.output.observe(on: UIScheduler()).observeResult(seila)
+    }
+    
+    private func seila(action: Result<Ticket,Error>) {
+        switch action {
+        case .success(let ticket):
+            showAlert(
+                title: "Ticket #\(ticket.id) opened with success!",
+                message: "Verify your ticket on your tickets list.",
+                styleType: .default,
+                backToTicketsList)
+            break
+        case .failure(let error):
+            showAlert(
+                title: "Ops! Something happened. Try again.",
+                message: error.localizedDescription,
+                styleType: .cancel)
+            break
+        }
     }
     
     @IBAction func openNewTicket(_ sender: UIButton) {
         guard let subject = ticketSubjectLabel.text, !subject.isEmpty else {
             showAlert(
-                title: AlertMessages.obrigatoryField.rawValue,
-                message: AlertMessages.obrigatorySubjectField.rawValue,
+                title: AlertMessages.obrigatoryFieldTitle.rawValue,
+                message: AlertMessages.obrigatorySubjectFieldMessage.rawValue,
                 styleType: .cancel
             )
             return
@@ -51,8 +70,8 @@ class OpenNewTicketViewController: BaseViewController {
                 
         guard let comment = ticketCommentLabel.text, !comment.isEmpty else {
             showAlert(
-                title: AlertMessages.obrigatoryField.rawValue,
-                message: AlertMessages.obrigatoryCommentField.rawValue,
+                title: AlertMessages.obrigatoryFieldTitle.rawValue,
+                message: AlertMessages.obrigatoryCommentFieldMessage.rawValue,
                 styleType: .cancel
             )
             return
@@ -62,7 +81,7 @@ class OpenNewTicketViewController: BaseViewController {
     }
     
     
-    @IBAction func backToTicketsList(_ sender: UIBarButtonItem) {
-        self.dismiss(animated: true, completion: nil)
+    func backToTicketsList(_ action: UIAlertAction) {
+        self.navigationController?.popViewController(animated: true)
     }
 }

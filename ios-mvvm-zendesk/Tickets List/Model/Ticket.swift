@@ -9,9 +9,13 @@
 import Foundation
 import ObjectMapper
 
-class TicketResponse: Mappable {
+class TicketsResponse: Mappable {
     
     var tickets: Array<Ticket>
+    
+    init() {
+        self.tickets = []
+    }
     
     required init?(map: Map) {
         self.tickets = []
